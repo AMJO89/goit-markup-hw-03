@@ -15,6 +15,14 @@
   --secundary-background-color: #2F303A;
   }
 
+  .container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
 /* -------------------- body -------------------- */
 
 .body{
@@ -23,15 +31,6 @@
   background-color: var(--primary-background-color);
   font-size: 16px;
   letter-spacing: 0.03em;
-  width: 1200px
-}
-
-.container{
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .text{
@@ -47,66 +46,70 @@
 /* -------------------- header -------------------- */
 
 .box-header{
-  display: inline-flex;
+  padding: 25px;
+  Width: 1600px;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  padding: 11px;
-  Width: 1600px;
-  Height: 80px;
+  justify-content: center;
 }
 
-header nav .logo{
+.menu-nav{
+  width: 20%;
+  height: 31px;
+  left: 0;
+}
+
+header .logo{
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
-  margin-left: 215px;
-  width: 145px;
-  height: 31px;
 }
 
-.menu-nav{
+.menu-nav {
   font-family: 'Roboto';
-  width: 281;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  width:30%;
   height: 16px;
-  left: 552px;
-  top: 32px;
-  display: inline-flex;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  margin-left: 93px;
-}
-
-.contact-nav{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   display: flex;
-  flex-wrap: nowrap;
-  margin-left: 344px;
-  width: 303;
+  justify-content: space-around;
+}
+
+.contact-nav {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  width:50%;
   height: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 
 .menu-list{
   color: var(--color-tex-primary);
   text-decoration: none;
-  padding: 20px;
 }
 
 .menu-list:hover{
   color: var(--accent-color);
+}
+
+.line {
+  border-top: 1px solid rgba(236, 236, 236, 1);
+  height: 2px;
+  width: 1600px;
 }
 
 /*bottoms*/
@@ -119,17 +122,15 @@ header nav .logo{
 .contact-h:hover{
   color:var(--accent-color);
 } 
-.line {
-  border-top: 1px solid var(--color-text-secundary);
-  height: 2px;
-  width: 1600px;
-}
 
 /* -------------------- main -------------------- */
 
 .box-main{
-  display: inline-flex;
+  Width: 1600px;
+  display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 main h1{
@@ -154,11 +155,17 @@ main h2 {
 
 /* EFFECTIVE SOLUTIONS FOR YOUR BUSINESS*/
 
+
 .main-tittle{
   color: var(--primary-background-color);
   background-color: var(--secundary-background-color);
   padding: 200px;
   text-align: center;
+}
+
+.tittle{
+  width: 1200px;
+  padding: 0px 250px;
 }
 
 .button{
@@ -180,26 +187,22 @@ main h2 {
 /*Nuestras ventajas*/
 
 .main-advantages{
-  display: inline-flex;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin: 95px 0px;
 }
+
 .ul-advantages{
   display: flex;
   flex-wrap:nowrap;
-  align-items: center;
   justify-content:space-between;
-  margin: 0px 215px;
 }
 
 .li-advantages {
   margin: 15px;
-}
-
-main p.text{
-  padding-top: 10px;
+  width: 270px;
 }
 
 .title-advantages{
@@ -214,28 +217,25 @@ main p.text{
   text-transform: uppercase;
 }
 
-/*What do we do*/
-
-.main-what{
-  padding-bottom: 94px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+main p.text{
+  padding-top: 10px;
 }
 
-.main-what .container{
+/*What do we do*/
+
+.ul-what{
+  margin-top: 55.05px;
+  margin-bottom: 94px;
+  width: 1200px;
   display: flex;
-  align-items: center;
-  justify-content:space-between;
-  flex-wrap: nowrap;
-  margin-top: 55.5px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*Our team*/
 
 .main-our{
-  padding: 94px 0px;
+  padding: 94px 200px;
   background-color:rgba(245, 244, 250, 1);
   display: flex;
   justify-content: center;
@@ -244,11 +244,9 @@ main p.text{
 }
 
 .main-our ul {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0px 198px 0px 208px;
 }
 
 .main-our li{
@@ -263,7 +261,6 @@ main p.text{
   margin-left: 10px;
 }
 
-
 .main-our h3 {
   margin: 20px 0 10px 0;
 }
@@ -273,9 +270,6 @@ main p.text{
 }
 
 /* -------------------- footer -------------------- */
-footer{
-  width: 1606px;
-}
 
 .box-footer{
   background-color: var(--secundary-background-color);
@@ -287,7 +281,19 @@ footer{
   line-height: 24px;
   letter-spacing: 0.03em;
   list-style: none;
-  padding: 60px 215px;
+  width: 1600px;
+  height: 252px;
+  padding: 60px 200px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .contact-footer{
+    height: 132px;
+    width: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   footer .logo{
@@ -321,23 +327,21 @@ footer{
 
 /* -------------------- BRIEFCASE -------------------- */
 
-.briefcase{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.briefcase {
+  width: 1600px;
+  display:inline-flex;
   flex-direction: column;
-  padding: 106px 215px 82px 215px;
-  width: 1601px;
+  align-items: center;
 }
 
 .briefcase .nav-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 15px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 106px;
   margin-bottom: 50px;
-  list-style: none;
 }
 
 .buttons{
@@ -366,6 +370,7 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 82px;
 }
 
 .cards-li {
