@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  width: 1600px;
+}
+
 /* -------------------- prime styles -------------------- */
 
 :root {
@@ -22,6 +26,10 @@
     align-items: center;
     align-content: center;
   }
+
+section{
+  padding: 94px 0px;
+}
 
 /* -------------------- body -------------------- */
 
@@ -46,12 +54,14 @@
 /* -------------------- header -------------------- */
 
 .box-header{
-  padding: 25px;
-  Width: 1600px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.box-header .container{
+  margin: 25px 200px;
 }
 
 .menu-nav{
@@ -109,7 +119,6 @@ header .logo{
 .line {
   border-top: 1px solid rgba(236, 236, 236, 1);
   height: 2px;
-  width: 1600px;
 }
 
 /*bottoms*/
@@ -126,11 +135,10 @@ header .logo{
 /* -------------------- main -------------------- */
 
 .box-main{
-  Width: 1600px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 main h1{
@@ -159,8 +167,11 @@ main h2 {
 .main-tittle{
   color: var(--primary-background-color);
   background-color: var(--secundary-background-color);
-  padding: 200px;
   text-align: center;
+}
+
+.main-tittle .container{
+  margin: 106px 200px;
 }
 
 .tittle{
@@ -191,9 +202,10 @@ main h2 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 95px 0px;
 }
-
+.main-advantages .container {
+  margin: 0px 200px;
+}
 .ul-advantages{
   display: flex;
   flex-wrap:nowrap;
@@ -223,9 +235,11 @@ main p.text{
 
 /*What do we do*/
 
+.main-what .container{
+  margin: 55px 200px 0px 200px;
+}
+
 .ul-what{
-  margin-top: 55.05px;
-  margin-bottom: 94px;
   width: 1200px;
   display: flex;
   flex-direction: row;
@@ -235,12 +249,15 @@ main p.text{
 /*Our team*/
 
 .main-our{
-  padding: 94px 200px;
   background-color:rgba(245, 244, 250, 1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.main-our .container{
+  margin: 50px 200px 0px 200px ;
 }
 
 .main-our ul {
@@ -257,8 +274,6 @@ main p.text{
   0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border: 1px solid #eeeeee;
   cursor: pointer;
-  margin-top: 50px;
-  margin-left: 10px;
 }
 
 .main-our h3 {
@@ -281,15 +296,17 @@ main p.text{
   line-height: 24px;
   letter-spacing: 0.03em;
   list-style: none;
-  width: 1600px;
-  height: 252px;
-  padding: 60px 200px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   }
 
+  .box-footer .container{
+    padding: 0px 215px;
+  }
+
+/*contact-footer*/
+
   .contact-footer{
-    height: 132px;
     width: 231px;
     display: flex;
     flex-direction: column;
@@ -304,8 +321,6 @@ main p.text{
     text-decoration: none;
     color: var(--accent-color);
   }
-
-/*links*/
 
 .contact-f1{
   text-decoration: none;
@@ -324,6 +339,9 @@ main p.text{
 .contact-f:hover{
   color:var(--accent-color);
 } 
+
+/*Find us at*/
+
 
 /* -------------------- BRIEFCASE -------------------- */
 
