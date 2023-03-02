@@ -233,7 +233,9 @@ main p.text{
 /*What do we do*/
 
 .main-what .container{
-  margin: 55px 200px 0px 200px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .ul-what{
